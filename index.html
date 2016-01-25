@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/portfolio.js"></script>
+  </head>
+  <body class="back">
+    <div id="menu" class="menu">
+      <div id="menuContainer" class="menuContainer">    
+      </div>
+    </div>
+    <div class="stripe stripeSize">
+        <div class="menu">
+            <div id="navMenuContainer" class="menuContainer">  
+           </div>
+        </div>
+    </div>
+    <div id="overlay">
+        <div id="overlayHeader">
+            <div id="workIcon" class="leftWorkNav"></div>
+            <div id="workTitle" class="middleWorkNav"></div>
+            <div class="rightWorkNav"><a id="closeDialog" href="#" onclick="hideWork()"><i class="fa fa-times"></i></a></div> 
+        </div>
+
+        <div id="overlayNav">
+            <div id="overlayNavPrev" class="overlayNavElement"><a id="prevWork" class="workNav" href="#"><i class="fa fa-angle-left"></i></a></div>
+            <div id="workBody" href="#">
+                <a class="zoomIn" href="#" onclick="largeWork(this);"><div id="workImage"></div></a> 
+             
+            </div>
+            <div id="overlayNavNext" class="overlayNavElement"><a id="nextWork" class="workNav" href="#"><i class="fa fa-angle-right"></i></a></div>  
+        </div>
+           <div id="workText"></div>
+
+      </div>
+      <div id="detailOverlay">
+      </div>
+      <div id="detailFade"></div>
+      <div id="fade"></div>
+      <div id="glassScreen" class="zoomOut"></div>
+      
+      <!-- DATA GOES HERE -->
+
+    <div id="database">
+      <div id="menuDatabase">
+          <div id="data1">
+            <div id="dataTitle">Placeholder Title</div>
+            <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-play icon"></i></div>
+          </div>
+          <div id="data2">
+            <div id="dataTitle">Placeholder Title</div>
+            <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-user icon"></i></div>
+          </div>
+          <div id="data3">
+            <div id="dataTitle">Placeholder Title</div>
+            <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-briefcase icon"></i></div>
+          </div>          
+          <div id="data4">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-pie-chart icon"></i></div>
+          </div>
+          <div id="data5">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-at icon"></i></div>
+          </div>
+          <div id="data6">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-map-marker icon"></i></div>
+          </div>
+          <div id="data7">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-cog icon"></i></div>
+          </div>
+      </div>
+      
+      <div id="workDatabase">
+          <div id="data1">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-camera-retro icon"></i></div>
+          </div>
+          <div id="data2">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSourceTall" src="images/portfolio/placeholder_tall.png"></div>
+            <div id="dataIcon"><i class="fa fa-hashtag icon"></i></div>
+          </div>
+          <div id="data3">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder_large.png"></div>
+            <div id="dataIcon"><i class="fa fa-code icon"></i></div>
+          </div>          
+          <div id="data4">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSourceTall" src="images/portfolio/placeholder_tall_large.png"></div>
+            <div id="dataIcon"><i class="fa fa-pencil icon"></i></div>
+          </div>
+          <div id="data5">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-graduation-cap icon"></i></div>
+          </div>
+          <div id="data6">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-font icon"></i></div>
+          </div>
+          <div id="data7">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-paw icon"></i></div>
+          </div>
+          <div id="data8">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-sticky-note icon"></i></div>
+          </div>
+          <div id="data9">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-dribbble icon"></i></div>
+          </div>
+          <div id="data10">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-camera-retro icon"></i></div>
+          </div>
+          <div id="data11">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-camera-retro icon"></i></div>
+          </div>
+          <div id="data12">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-hashtag icon"></i></div>
+          </div>
+          <div id="data13">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-code icon"></i></div>
+          </div>          
+          <div id="data14">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-pencil icon"></i></div>
+          </div>
+          <div id="data15">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-graduation-cap icon"></i></div>
+          </div>
+          <div id="data16">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-font icon"></i></div>
+          </div>
+          <div id="data17">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-paw icon"></i></div>
+          </div>
+          <div id="data18">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-sticky-note icon"></i></div>
+          </div>
+          <div id="data19">
+            <div id="dataTitle">Placeholder Title</div>
+           <div id="dataText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div id="dataImage"><img class="dataImageSource" src="images/portfolio/placeholder.png"></div>
+            <div id="dataIcon"><i class="fa fa-dribbble icon"></i></div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
