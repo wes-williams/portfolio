@@ -125,7 +125,7 @@ function showWork(workId,menuNav) {
     $('#workImage').html(workData.find('#dataImage').html());
     $('#workText').html(workData.find('#dataText').html());                  
 
-    $('#workIcon').html('<i style="color:white;font-size:50px" class="' + $(work).find('.icon').attr('class').replace('icon','') + '"></i>' );
+    $('#workIcon').html('<i class="workIcon ' + $(work).find('.icon').attr('class').replace('icon','') + '"></i>' );
 
     $('#overlay').show()
     $('#fade').show()
