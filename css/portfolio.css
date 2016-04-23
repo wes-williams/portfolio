@@ -288,29 +288,30 @@
 
 /* phone */
 @media screen and (max-device-width:700px)  and (orientation: portrait)  {
+
     .iconSize {
-        width:240px;
-        height:240px;
-        border: 3px solid white;
-        border-radius: 40px;
+        width:97px;
+        height:97px;
+        border: 2px solid white;
+        border-radius: 10px;
     }
     .stripeSize {
-        height: 300px;
+        height: 115px;
     }
 
     .paddingIconSize {
         clear:both;
-        height:300px
+        height:115px
     }
 
     .icon {
         vertical-align:middle;
-        line-height:240px;
-        font-size:120px;
+        line-height:97px;
+        font-size:45px;
     }
 
     .icons {
-        margin: 20px;
+        margin: 5px;
     }
     
     #overlayNav {
@@ -319,6 +320,32 @@
 }
 
 @media screen and (max-device-width:700px)  and (orientation: landscape)  {
+    
+    
+    .iconSize {
+        width:97px;
+        height:97px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    .stripeSize {
+        height: 115px;
+    }
+
+    .paddingIconSize {
+        clear:both;
+        height:115px
+    }
+
+    .icon {
+        vertical-align:middle;
+        line-height:97px;
+        font-size:45px;
+    }
+
+    .icons {
+        margin: 7px;
+    }
     
     #overlayNav {
        height:70%; 
